@@ -1,0 +1,29 @@
+:root { --c1: #4b6cb7; --c2: #182848; }
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  font-family: -apple-system, "Hiragino Sans", "Yu Gothic UI", Meiryo, sans-serif;
+  background: linear-gradient(135deg, var(--c1), var(--c2));
+  color: #fff;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  padding-top: max(24px, env(safe-area-inset-top));
+  padding-bottom: max(24px, env(safe-area-inset-bottom));
+}
+main { width: 100%; max-width: 420px; text-align: center; }
+#icon { width: 132px; height: 132px; border-radius: 30px; box-shadow: 0 14px 34px rgba(0,0,0,.35); display: block; margin: 0 auto 18px; }
+h1 { font-size: 24px; margin: 0 0 14px; font-weight: 700; }
+p { font-size: 17px; line-height: 1.6; margin: 0 0 22px; text-align: left; background: rgba(0,0,0,.18); border-radius: 14px; padding: 14px 16px; }
+button {
+  appearance: none; border: 0; cursor: pointer; width: 100%;
+  font: inherit; font-size: 18px; font-weight: 700; padding: 16px; border-radius: 999px; margin: 8px 0;
+  background: rgba(255,255,255,.22); color: #fff;
+}
+button.primary { background: #fff; color: #222; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px 10px; margin-top: 22px; }
+.grid a { color: #fff; text-decoration: none; font-size: 13px; display: block; }
+.grid img { width: 72px; height: 72px; border-radius: 16px; box-shadow: 0 6px 16px rgba(0,0,0,.3); display: block; margin: 0 auto 6px; }
